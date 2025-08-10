@@ -6,8 +6,8 @@ import axios from 'axios'
 
 // Tokenni olib, axiosga beramiz
 const token = sessionStorage.getItem('admin')
-// axios.defaults.baseURL = 'https://education-backend-jxtk.onrender.com/api'
-axios.defaults.baseURL = 'http://localhost:3000/api'
+axios.defaults.baseURL = 'https://ilimziyo-backend.onrender.com/api'
+// axios.defaults.baseURL = 'http://localhost:3000/api'
 if (token) {
   axios.defaults.headers.common['Authorization'] = `Bearer ${token.token}`
 }

@@ -78,7 +78,7 @@
             class="w-full"
           />
         </div>
-        <div>
+        <!-- <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">Sana</label>
           <DatePicker 
             v-model="expenseForm.spentAt" 
@@ -88,7 +88,7 @@
             class="w-full"
             showIcon
           />
-        </div>
+        </div> -->
       </div>
       <template #footer>
         <div class="flex gap-2 justify-end">
@@ -123,7 +123,7 @@ import Button from 'primevue/button'
 import Dialog from 'primevue/dialog'
 import Textarea from 'primevue/textarea'
 import InputNumber from 'primevue/inputnumber'
-import DatePicker from 'primevue/datepicker'
+// import DatePicker from 'primevue/datepicker'
 
 // Custom komponentlar
 import ExpenseTable from '@/components/Expense/ExpenseTable.vue'
@@ -145,7 +145,7 @@ const monthlyGrowth = ref(15.3)
 const expenseForm = ref({
   description: '',
   amount: null,
-  spentAt: new Date()
+  // spentAt: new Date()
 })
 
 // Computed
@@ -221,7 +221,7 @@ const saveExpense = async () => {
       expenseForm.value = {
         description: '',
         amount: null,
-        spentAt: new Date()
+        // spentAt: new Date()
       };
       editingExpense.value = null;
       showAddDialog.value = false;
